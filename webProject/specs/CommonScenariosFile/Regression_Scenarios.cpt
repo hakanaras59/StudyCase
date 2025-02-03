@@ -1,0 +1,14 @@
+# PETSHOP KATEGORISI DUSUKTEN YUKSEGE SIRALANAN URUN FIYAT LISTESI KONTROLU
+* "https://www.migros.com.tr/" linkine gidilir ve sayfa yüklenene kadar beklenir
+* "//div[@class='title-close-btn-wrapper']//fa-icon[@class='ng-fa-icon']//*[name()='svg']" xpath'li element görünene kadar bekleyip tıklanır
+* "//*[@id=\"reject-all\"]" xpath'li element görünene kadar bekleyip tıklanır
+* "//span[contains(text(),'KATEGORİLER')]" xpath'li element görünene kadar bekleyip tıklanır
+* "#header-categories--pet-shop-c-a0" cssSelector ile elementin href değeri kullanılarak sayfaya yönlendirilir
+* "(//h2[normalize-space()='Pet Shop'])[1]" xpath'li elementin var olduğu kontrol edilir
+* "//div[@id='mat-select-value-1']" xpath'li element görünene kadar bekleyip tıklanır
+* "//span[contains(text(),'Önce En Düşük Fiyat')]" xpath'li element görünene kadar bekleyip tıklanır
+* "//mat-card//div[contains(@class, 'price subtitle-1')]/span[1]" XPath'li fiyat listesinin "artan" sıralamada olup olmadığı kontrol edilir
+
+# HATALI SENARYO SECREEN SHOT KONTROLU ICIN
+* "https://www.migros.com.tr/" linkine gidilir ve sayfa yüklenene kadar beklenir
+* "//div[@class='title-close-btn-wrapper2']" xpath'li element görünene kadar bekleyip tıklanır
